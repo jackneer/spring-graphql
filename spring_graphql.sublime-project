@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+    "settings":
+    {
+        "java_import_path":
+        [
+            "/usr/lib/jvm/java-8-openjdk-amd64/src.zip",
+        ]
+    }
+}

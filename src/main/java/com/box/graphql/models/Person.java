@@ -4,9 +4,10 @@ import javax.persistence.*;
 
 
 @Entity
-@TAble(name = "person")
-class Person {
+@Table(name = "person")
+public class Person {
     
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int uuid;
 

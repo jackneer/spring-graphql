@@ -14,6 +14,7 @@ public class GraphqlApplication {
 		SpringApplication.run(GraphqlApplication.class, args);
 	}
 
+    // enable to get data from lazy binding
     @Bean
     public Filter OpenFilter() {
         return new OpenEntityManagerInViewFilter();

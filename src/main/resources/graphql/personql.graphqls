@@ -1,0 +1,22 @@
+
+type Query {
+    people:[Person]
+    person(uuid: ID):Person
+    article(uuid: ID):Article
+    articles:[Article]
+}
+
+type Article {
+    uuid: ID!,
+    title: String,
+    content: String,
+    person: Person
+}
+
+type Person {
+    uuid: ID!,
+    name: String,
+    age: Int,
+    articles: [Article]!
+}
+

@@ -10,6 +10,7 @@ A boilerplate project of applying graphql on Spring Boot.
 
 ## Setup
 
+- Create a database
 - Modify application.properties for database connection
 - Run with command
 
@@ -42,3 +43,10 @@ localhost:8080/graphiql
     }
 }
 ```
+
+## Development
+
+### Query
+- Add schema at src/main/resource/graphql/*.graphqls
+- Add query functions in src/main/java/com/box/graphql/query/Query/java
+- Call service/repository for retriving data

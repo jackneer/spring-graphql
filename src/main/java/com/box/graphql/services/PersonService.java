@@ -25,4 +25,13 @@ public class PersonService {
     public List<Person> getPeople() {
         return personRepo.findAll();
     }
+
+    public Person addPerson(String name, int age) {
+        Person person = new Person();
+
+        person.setName(name);
+        person.setAge(age);
+
+        return personRepo.save(person);
+    }
 }

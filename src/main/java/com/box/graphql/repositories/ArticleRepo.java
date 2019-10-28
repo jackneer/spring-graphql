@@ -7,6 +7,4 @@ import java.util.List;
 
 public interface ArticleRepo extends JpaRepository<Article, Integer> {
 
-    // @Query("select a from Article a where a.person_id = ?1")
-    // List<Article> findByPerson(int person_id);
 }

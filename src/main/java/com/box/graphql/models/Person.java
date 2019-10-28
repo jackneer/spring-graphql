@@ -21,6 +21,10 @@ public class Person {
     private List<Article> articles;
 
     public Person() {}
+
+    public Person(int id) {
+        this.uuid = id;
+    }
     
     public int getUuid() { return uuid; }
     public void setUuid(int uuid) { this.uuid = uuid; }

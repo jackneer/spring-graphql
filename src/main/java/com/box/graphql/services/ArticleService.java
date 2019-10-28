@@ -29,4 +29,12 @@ public class ArticleService {
     public List<Article> getArticles(int person_id) {
         return null;
     }
+
+    public Article addArticle(String title, String content, int person_id) {
+        Article article = new Article();
+        article.setTitle(title);
+        article.setContent(content);
+        article.setPerson(new Person(person_id));
+        return articleRepo.save(article);
+    }
 }

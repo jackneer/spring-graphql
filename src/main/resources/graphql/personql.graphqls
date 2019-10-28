@@ -1,8 +1,10 @@
-
+"""
+query 
+"""
 type Query {
     people:[Person]
-    person(uuid: ID):Person
-    article(uuid: ID):Article
+    person(uuid: ID!):Person
+    article(uuid: ID!):Article
     articles:[Article]
 }
 
@@ -20,3 +22,17 @@ type Person {
     articles: [Article]!
 }
 
+"""
+mutation
+"""
+type Mutation {
+    """
+    add a person
+    """
+    addPerson(name: String, age: Int):Person!
+
+    """
+    add an article
+    """
+    addArticle(title: String, content: String, personId: ID!):Article!
+}
